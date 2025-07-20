@@ -51,56 +51,56 @@ function App() {
       icon: "💻",
       courses: 12,
       description: "Desarrollo de aplicaciones, sistemas informáticos, redes",
-      color: "bg-blue-500"
+      color: "bg-primary"
     },
     {
       name: "Sanidad",
       icon: "🏥",
       courses: 8,
       description: "Técnicos en salud, laboratorio, imagen diagnóstica",
-      color: "bg-green-500"
+      color: "bg-accent"
     },
     {
       name: "Administración y Gestión",
       icon: "📊",
       courses: 6,
       description: "Administración, finanzas, recursos humanos",
-      color: "bg-purple-500"
+      color: "bg-secondary"
     },
     {
       name: "Servicios Socioculturales",
       icon: "👥",
       courses: 5,
       description: "Educación infantil, integración social, animación",
-      color: "bg-orange-500"
+      color: "bg-tertiary"
     },
     {
       name: "Imagen Personal",
       icon: "✨",
       courses: 4,
       description: "Estética, peluquería, asesoría de imagen",
-      color: "bg-pink-500"
+      color: "bg-primary/80"
     },
     {
       name: "Hostelería y Turismo",
       icon: "🏨",
       courses: 7,
       description: "Gestión hotelera, turismo, restauración",
-      color: "bg-yellow-500"
+      color: "bg-accent/80"
     },
     {
       name: "Actividades Físicas y Deportivas",
       icon: "⚽",
       courses: 3,
       description: "Animación deportiva, acondicionamiento físico",
-      color: "bg-red-500"
+      color: "bg-secondary/80"
     },
     {
       name: "Comercio y Marketing",
       icon: "🛍️",
       courses: 5,
       description: "Marketing, comercio internacional, ventas",
-      color: "bg-indigo-500"
+      color: "bg-tertiary/80"
     }
   ]
 
@@ -224,16 +224,16 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Descubre el auge de la<br />
-              <span className="text-yellow-400">Formación Profesional</span><br />
+              <span className="text-tertiary">Formación Profesional</span><br />
               en España
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 text-white/80 max-w-3xl mx-auto">
               Un futuro brillante te espera con más de 507.335 estudiantes ya matriculados
             </p>
             
@@ -251,7 +251,7 @@ function App() {
               </div>
             </div>
 
-            <Button size="lg" variant="secondary" className="bg-yellow-400 text-gray-900 hover:bg-yellow-300 px-8 py-4 text-lg rounded-full">
+            <Button size="lg" variant="secondary" className="bg-tertiary text-gray-900 hover:bg-tertiary/90 px-8 py-4 text-lg rounded-full">
               Pedir información
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -264,29 +264,29 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-blue-600" />
+              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-primary" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">507.335</div>
               <div className="text-gray-600">Estudiantes FP Superior</div>
             </div>
             <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="h-8 w-8 text-green-600" />
+              <div className="bg-accent/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="h-8 w-8 text-accent" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">43,3%</div>
               <div className="text-gray-600">Crecimiento en 5 años</div>
             </div>
             <div className="text-center">
-              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building className="h-8 w-8 text-purple-600" />
+              <div className="bg-secondary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building className="h-8 w-8 text-primary" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">3.871</div>
               <div className="text-gray-600">Centros docentes</div>
             </div>
             <div className="text-center">
-              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="h-8 w-8 text-orange-600" />
+              <div className="bg-tertiary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="h-8 w-8 text-gray-900" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">985.431</div>
               <div className="text-gray-600">Total estudiantes FP</div>
@@ -456,19 +456,19 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+      <section className="py-20 bg-gradient-to-r from-primary to-primary/80 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             ¿Listo para cambiar tu futuro?
           </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-white/80">
             La Formación Profesional te está esperando. Descubre los programas disponibles y prepárate para un futuro lleno de oportunidades.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100 px-8">
+            <Button size="lg" variant="secondary" className="bg-tertiary text-gray-900 hover:bg-tertiary/90 px-8">
               Pedir información
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 px-8">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8">
               Explorar cursos
             </Button>
           </div>
